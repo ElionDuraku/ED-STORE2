@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 
 :root{
-    --red:#ff0e0eec;
+    --red:#fe0000;
     --black:#000000;
     --light-color:#666;
     --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
@@ -28,7 +28,8 @@ html{
 }
 
 body{
-    background:#eee;
+    /* background:#eee; */
+    background:#E1E2E6;
 }
 
 section{
@@ -40,7 +41,7 @@ section{
     padding:2rem 0;
     padding-bottom: 3rem;
     font-size: 3.5rem;
-    color:var(--red);
+    color:--red;
 }
 
 .heading span{
@@ -102,6 +103,24 @@ section{
     border-bottom: .2rem solid var(--red);
 }
 
+.header .navbar a:visited{
+    color:#0d0d0d;
+    border-bottom: .3rem solid var(--red);
+}
+
+.header .navbar a:nth-child(2){
+    background-color: red;
+    color: #0d0d0d;
+    padding: 10px;
+}
+
+.header .navbar a:hover:nth-child(2){
+    background-color: red;
+    /* border-bottom: .2rem solid var(--black); */
+    color: #eee;
+    padding: 5px;
+}
+
 /* search & login starts and darkmode*/
 
 #menu-btn {
@@ -132,6 +151,13 @@ body.active{
     /* --light-color:rgba(255,255,255,.3); */
     background:rgb(0, 0, 0);
 }
+
+/* .box-container.active{
+    --white-color:#111;
+    --black-color:#fff; */
+    /* --light-color:rgba(255,255,255,.3); */
+    /* background:rgb(0, 0, 0);
+} */
 
 /* search & login ends */
 
@@ -173,7 +199,7 @@ body.active{
 }
 
 .header .search-form label:hover{
-    color:var(--red);
+    color: var(--red);
 }
 /* serach ends */
 
@@ -404,6 +430,7 @@ body.active{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     gap:1.5rem;
+    margin-left: 50px;
 }
 
 .footer .box-container .box h3{
