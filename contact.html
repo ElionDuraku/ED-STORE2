@@ -96,18 +96,18 @@
 
 <section class="home" id="home">
 
-    <div class="boxx">
+    <!-- <div class="boxx">
         <div class="form">
         <form action="" class="form">
                 <h2>Contact Us</h2>
                 <div class="inputBox">
                     <input type="text" class="name"  required="required" placeholder="Full Name" >
-                    <!-- <span>Full Name</span> -->
+                     <span>Full Name</span> 
                     <i></i>
                 </div>
                 <div class="inputBox">
                     <input type="email" class="email"  required="required" placeholder="Email">
-                    <!-- <span>Email</span> -->
+                    <!-- <span>Email</span> 
                     <i></i>
                 </div>
                 <div class="inputBox">
@@ -122,9 +122,34 @@
             </div>
         
            </div>
-        </form>
-           
-
+        </form> -->
+            
+        <div class="container">
+            <form id="form" class="form">
+                <h2>Register With Us</h2>
+                <div class="form-control">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Enter Username">
+                    <small>Error Message</small>
+                </div>
+                <div class="form-control">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" placeholder="Enter email">
+                    <small>Error Message</small>
+                </div>
+                <div class="form-control">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter password">
+                    <small>Error Message</small>
+                </div>
+                <div class="form-control">
+                    <label for="password2">Confirm Password</label>
+                    <input type="password" id="password2" placeholder="Enter password again">
+                    <small>Error Message</small>
+                </div>
+                <button>Submit</button>
+            </form>
+        </div>
 </section>
 
 <!--!-------------------------------- BANNER SECTION ENDS ----------------------------------------------------->
@@ -194,20 +219,7 @@
 
 <!--!-------------------------------- FOOTER SECTION ENDS ---------------------------------------------->
 
-<!-- <script>
-    const nameField = document.querySelector(".name");
-    const emailField = document.querySelector(".email");
-    const passwordField = document.querySelector(".password");
-    const confirmPasswordField = document.querySelector(".confirm-password");
-    const loginBtn = document.querySelector(".login");
-    const form = document.querySelector(".form");
 
-    form.addEventListener("submit", (e) => {
-        e.preventDefault();
-
-        validateForm([nameField, emailField, passwordField, confirmPasswordField]);
-    })
-</script> -->
 
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 <!-- <script src="./js/button.js"></script> -->
