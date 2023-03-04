@@ -20,6 +20,18 @@
     transition: all .2s linear;
 }
 
+.swiper {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    /* overflow: hidden; */
+    /* background-color: #fe0000 !important; */
+    list-style: none;
+    padding: 0;
+    z-index: 1
+}
+
+
 html{
     font-size: 62.5%;
     overflow-x: hidden;
@@ -419,7 +431,68 @@ body.active{
 
 /* END CATEGORIES */
 
+.dashboard-main ul{
+    display: flex;
+    flex-direction: column;
+}
+.dashboard-main ul li{
+    list-style-type: none;
+}
+.dashboard-main ul li a {
+    text-decoration: none;
+    font-size: 23px;
+}
+.dashboard-main ul li i{
+    font-size: 23px;
+}
+.add-product-form{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.add-product-form form {
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+}
 
+.add-product-form form input{
+    border: 1px solid black;
+    padding: 10px;
+    margin: 5px;
+}
+.add-product-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.add-product-section a{
+    border: 1px solid black;
+    padding: 10px;
+    color: black;
+    font-size: 23px;
+}
+table{
+    width: 700px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+table th{
+    border: 1px solid black;
+}
+table td{
+    border: 1px solid black;
+}
+.product-info-content {
+   display: flex;
+}
+.dashboard-table img{
+    width: 100px;
+}
 /* START FOOTER */
 
 .footer{
